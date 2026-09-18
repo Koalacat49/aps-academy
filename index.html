@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="APS Academy — 30-day onboarding for future APS contributors">
+  <title>APS Academy</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">A</div>
+        <div>
+          <div class="brand-title">APS Academy</div>
+          <div class="brand-subtitle">Contributor Track</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="roadmap">Roadmap</button>
+        <button class="nav-item" data-view="mission">Mission</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="target-label">YOUR TARGET</div>
+        <div class="target-text">30日後、小さなAPS Taskを理解・実装・テスト・説明できる。</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">30-DAY CONTRIBUTOR PROGRAM</div>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="status-cluster">
+          <div class="status-pill"><span>XP</span><strong id="xp-value">0</strong></div>
+          <div class="status-pill"><span>DAY</span><strong id="day-value">1 / 30</strong></div>
+        </div>
+      </header>
+
+      <section id="view-dashboard" class="view active"></section>
+      <section id="view-roadmap" class="view"></section>
+      <section id="view-mission" class="view"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
